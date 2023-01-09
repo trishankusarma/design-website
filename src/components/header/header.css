@@ -1,0 +1,67 @@
+.header {
+  background-color:  #151719;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 20vh;
+  width: 100vw;
+}
+.header .waviy {
+  position: relative;
+  -webkit-box-reflect: below -20px linear-gradient(transparent, rgba(0,0,0,.2));
+  font-size: 40px;
+}
+.header .waviy span {
+  font-family: 'Alfa Slab One', cursive;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  width: 45px;
+}
+
+.header .waviy .left {
+  animation: goLeft 4s infinite;
+}
+
+.header .waviy .right {
+  animation: goRight 4s infinite;
+}
+
+@keyframes goLeft {
+  
+  0%,100% {
+    transform: translateX(0)
+  }
+  50% {
+    transform: translateX(-90px)
+  }
+}
+
+@keyframes goRight {
+  
+  0%,100% {
+    transform: translateX(0)
+  }
+  50% {
+    transform: translateX(90px)
+  }
+}
+
+@keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+
+.header_pov{
+    background-color:  #151719;
+    color : white;
+    padding : 1rem;
+    font-size: 1rem;
+    text-align: center;
+}

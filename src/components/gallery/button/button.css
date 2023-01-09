@@ -1,0 +1,62 @@
+* {
+	transition: .5s;
+}
+.button {
+    height:90%;
+    width: 15vh;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    border-radius: 20%;
+}
+.button a {
+	position: absolute;
+    width:10vh;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+    border-radius: 10px;
+	padding: 10px 15px;
+	background: #555;
+	font-size: 15px;
+	text-decoration: none;
+	color: #fff;
+}
+.button a:first-child {
+	color: black;
+	background: white;
+}
+.button a:last-child {
+	clip-path: polygon(
+		40% 20%,
+		50% 50%,
+		40% 80%,
+		50% 100%,
+		100% 100%,
+		100% 0%,
+		50% 0%
+	);
+}
+.button #btn1:hover ~ #btn2 {
+	clip-path: polygon(
+		100% 20%,
+		100% 50%,
+		100% 80%,
+		100% 100%,
+		100% 100%,
+		100% 0%,
+		100% 0%
+	);
+}
+.button #btn2:hover {
+	clip-path: polygon(
+		0% 20%,
+		0% 50%,
+		0% 80%,
+		0% 100%,
+		100% 100%,
+		100% 0%,
+		0% 0%
+	);
+}
